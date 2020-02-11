@@ -12,8 +12,8 @@ class CityTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cityLabel: UILabel!
     
-//    func setCity(city: ){
-//        cityLabel.text = city.
-//    }
+    func setCity(city: City){
+        cityLabel.text = city.name
+    }
     
 }
