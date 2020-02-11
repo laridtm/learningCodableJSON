@@ -17,7 +17,7 @@
 		153AB1C723F1E0E000D54242 /* learningCodableJSONUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1C623F1E0E000D54242 /* learningCodableJSONUITests.swift */; };
 		153AB1D523F1E16800D54242 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1D423F1E16800D54242 /* JSONDecoder.swift */; };
 		153AB1D723F1F3BB00D54242 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1D623F1F3BB00D54242 /* CityTableViewCell.swift */; };
-		153AB1D923F1F5B900D54242 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1D823F1F5B900D54242 /* Cities.swift */; };
+		153AB1DB23F30D8600D54242 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1DA23F30D8600D54242 /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		153AB1C823F1E0E000D54242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		153AB1D423F1E16800D54242 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		153AB1D623F1F3BB00D54242 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
-		153AB1D823F1F5B900D54242 /* Cities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
+		153AB1DA23F30D8600D54242 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 				153AB1A823F1E0DA00D54242 /* ViewController.swift */,
 				153AB1D423F1E16800D54242 /* JSONDecoder.swift */,
 				153AB1D623F1F3BB00D54242 /* CityTableViewCell.swift */,
-				153AB1D823F1F5B900D54242 /* Cities.swift */,
+				153AB1DA23F30D8600D54242 /* City.swift */,
 				153AB1AA23F1E0DA00D54242 /* Main.storyboard */,
 				153AB1AD23F1E0DF00D54242 /* Assets.xcassets */,
 				153AB1AF23F1E0DF00D54242 /* LaunchScreen.storyboard */,
@@ -268,9 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				153AB1D923F1F5B900D54242 /* Cities.swift in Sources */,
 				153AB1D523F1E16800D54242 /* JSONDecoder.swift in Sources */,
 				153AB1A923F1E0DA00D54242 /* ViewController.swift in Sources */,
+				153AB1DB23F30D8600D54242 /* City.swift in Sources */,
 				153AB1D723F1F3BB00D54242 /* CityTableViewCell.swift in Sources */,
 				153AB1A523F1E0DA00D54242 /* AppDelegate.swift in Sources */,
 				153AB1A723F1E0DA00D54242 /* SceneDelegate.swift in Sources */,

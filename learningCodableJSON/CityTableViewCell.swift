@@ -10,6 +10,10 @@ import UIKit
 
 class CityTableViewCell: UITableViewCell {
 
-   
-
+    @IBOutlet weak var cityLabel: UILabel!
+    
+//    func setCity(city: ){
+//        cityLabel.text = city.
+//    }
+    
 }
