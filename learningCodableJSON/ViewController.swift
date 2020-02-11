@@ -29,11 +29,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CityCell") as! CityTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CityCell") as? CityTableViewCell
         
-        cell.setCity(city: cities[indexPath.row])
+        cell?.setCity(city: cities[indexPath.row])
         
-        return cell
+        return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
