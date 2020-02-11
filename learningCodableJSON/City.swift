@@ -8,9 +8,9 @@
 
 import Foundation
 
-class City {
+struct City {
     
-    var name: String
+    let name: String
     
     init(name: String) {
         self.name = name

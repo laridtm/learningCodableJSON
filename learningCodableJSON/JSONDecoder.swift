@@ -10,10 +10,10 @@ import Foundation
 
 struct Weather: Codable {
     
-    var humidity: Int
-    var city: String
-    var min: Int
-    var max: Int
+    let humidity: Int
+    let city: String
+    let min: Int
+    let max: Int
     
 }
 
