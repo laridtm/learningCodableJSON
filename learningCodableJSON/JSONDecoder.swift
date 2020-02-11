@@ -17,17 +17,35 @@ struct Weather: Codable {
     
 }
 
-//let json = """
-//{
-//"humidity": 67,
-//"city": "Flonopx",
-//"min": 20,
-//"max": 26
-//}
-//""".data(using: .utf8)!
-//
-//let decoder = JSONDecoder()
-//let howWeather = try! decoder.decode(Weather.self, from: json)
+func getJSON() {
+    let json = """
+    {
+     "weather": [
+        {
+          "humidity": 67,
+          "city": "Flonopx",
+          "min": 21,
+          "max": 26
+        },
+        {
+          "humidity": 57,
+          "city": "Palhoça",
+          "min": 20,
+          "max": 26
+        }
+      ]
+    }
+    """.data(using: .utf8)!
 
+    let decoder = JSONDecoder()
+    var arrWeather: [Weather] = []
+    
+    do {
+        arrWeather = [try decoder.decode(Weather.self, from: json)]
+    } catch {
+        print(error)
+    }
+    print(arrWeather)
+}
 
 
