@@ -17,6 +17,11 @@ struct Weather: Codable {
     
 }
 
+struct DicWeather: Codable {
+    
+    let weather: [Weather]
+}
+
 func getJSON() {
     let json = """
     {
@@ -38,14 +43,14 @@ func getJSON() {
     """.data(using: .utf8)!
 
     let decoder = JSONDecoder()
-    var arrWeather: [Weather] = []
+    var arrWeather: DicWeather?
     
     do {
-        arrWeather = [try decoder.decode(Weather.self, from: json)]
+        arrWeather = try decoder.decode(DicWeather.self, from: json)
+        print(arrWeather?.weather)
     } catch {
         print(error)
     }
-    print(arrWeather)
 }
 
 
