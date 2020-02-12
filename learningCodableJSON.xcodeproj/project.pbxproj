@@ -19,6 +19,7 @@
 		153AB1D723F1F3BB00D54242 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1D623F1F3BB00D54242 /* CityTableViewCell.swift */; };
 		153AB1DB23F30D8600D54242 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1DA23F30D8600D54242 /* City.swift */; };
 		153AB1DD23F3337900D54242 /* DataCityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1DC23F3337900D54242 /* DataCityTableViewCell.swift */; };
+		153AB1E123F472CF00D54242 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1E023F472CF00D54242 /* DataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		153AB1D623F1F3BB00D54242 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		153AB1DA23F30D8600D54242 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		153AB1DC23F3337900D54242 /* DataCityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCityTableViewCell.swift; sourceTree = "<group>"; };
+		153AB1E023F472CF00D54242 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				153AB1D423F1E16800D54242 /* JSONDecoder.swift */,
 				153AB1D623F1F3BB00D54242 /* CityTableViewCell.swift */,
 				153AB1DC23F3337900D54242 /* DataCityTableViewCell.swift */,
+				153AB1E023F472CF00D54242 /* DataViewController.swift */,
 				153AB1DA23F30D8600D54242 /* City.swift */,
 				153AB1AA23F1E0DA00D54242 /* Main.storyboard */,
 				153AB1AD23F1E0DF00D54242 /* Assets.xcassets */,
@@ -275,6 +278,7 @@
 				153AB1A923F1E0DA00D54242 /* ViewController.swift in Sources */,
 				153AB1DB23F30D8600D54242 /* City.swift in Sources */,
 				153AB1D723F1F3BB00D54242 /* CityTableViewCell.swift in Sources */,
+				153AB1E123F472CF00D54242 /* DataViewController.swift in Sources */,
 				153AB1DD23F3337900D54242 /* DataCityTableViewCell.swift in Sources */,
 				153AB1A523F1E0DA00D54242 /* AppDelegate.swift in Sources */,
 				153AB1A723F1E0DA00D54242 /* SceneDelegate.swift in Sources */,

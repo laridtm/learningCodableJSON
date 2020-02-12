@@ -23,34 +23,34 @@ struct DicWeather: Codable {
 }
 
 func getJSON() {
-    let json = """
-    {
-     "weather": [
-        {
-          "humidity": 67,
-          "city": "Flonopx",
-          "min": 21,
-          "max": 26
-        },
-        {
-          "humidity": 57,
-          "city": "Palhoça",
-          "min": 20,
-          "max": 26
-        }
-      ]
-    }
-    """.data(using: .utf8)!
+//    let json = """
+//    {
+//     "weather": [
+//        {
+//          "humidity": 67,
+//          "city": "Flonopx",
+//          "min": 21,
+//          "max": 26
+//        },
+//        {
+//          "humidity": 57,
+//          "city": "Palhoça",
+//          "min": 20,
+//          "max": 26
+//        }
+//      ]
+//    }
+//    """.data(using: .utf8)!
 
-    let decoder = JSONDecoder()
-    var arrWeather: DicWeather?
-    
-    do {
-        arrWeather = try decoder.decode(DicWeather.self, from: json)
-        print(arrWeather?.weather)
-    } catch {
-        print(error)
-    }
+//    let decoder = JSONDecoder()
+//    var arrWeather: DicWeather?
+//    
+//    do {
+//        arrWeather = try decoder.decode(DicWeather.self, from: json)
+//        print(arrWeather?.weather)
+//    } catch {
+//        print(error)
+//    }
 }
 
 

@@ -18,11 +18,11 @@ class DataCityTableViewCell: UITableViewCell {
     @IBOutlet weak var valueMinLabel: UILabel!
     @IBOutlet weak var maxLabel: UILabel!
     @IBOutlet weak var valueMaxLabel: UILabel!
-//
-//    func setLabels(city: City) {
-//        nameCityLabel.text =
-//        valueHumidityLabel.text =
-//        valueMinLabel.text =
-//        valueMaxLabel.text =
-//    }
+
+    func setLabels(city: Weather) {
+        nameCityLabel.text = city.city
+        valueHumidityLabel.text = "\(city.humidity)"
+        valueMinLabel.text = "\(city.min)"
+        valueMaxLabel.text = "\(city.max)"
+    }
 }
