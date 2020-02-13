@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DataCityTableViewCell: UITableViewCell {
+class DataCity: UIViewController {
 
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var nameCityLabel: UILabel!
@@ -18,11 +18,15 @@ class DataCityTableViewCell: UITableViewCell {
     @IBOutlet weak var valueMinLabel: UILabel!
     @IBOutlet weak var maxLabel: UILabel!
     @IBOutlet weak var valueMaxLabel: UILabel!
-
-    func setLabels(city: Weather) {
-        nameCityLabel.text = city.city
-        valueHumidityLabel.text = "\(city.humidity)"
-        valueMinLabel.text = "\(city.min)"
-        valueMaxLabel.text = "\(city.max)"
+    
+    
+    var weather: Weather?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        nameCityLabel.text = weather?.city
+        valueHumidityLabel.text = "\(weather?.humidity)%"
+        valueMinLabel.text = "\(weather?.min)º"
+        valueMaxLabel.text = "\(weather?.max)º"
     }
 }

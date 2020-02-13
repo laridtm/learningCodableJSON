@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="-33.333333333333336" y="115.84821428571428"/>
         </scene>
-        <!--Data View Controller-->
+        <!--Data City-->
         <scene sceneID="ikf-no-RG3">
             <objects>
-                <viewController id="E34-1l-iOt" customClass="DataViewController" customModule="learningCodableJSON" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="E34-1l-iOt" customClass="DataCity" customModule="learningCodableJSON" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5h8-Eb-lcE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,7 +74,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DataCity" rowHeight="120.5" id="b82-N3-FTx" customClass="DataCityTableViewCell" customModule="learningCodableJSON" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DataCityCell" rowHeight="120.5" id="b82-N3-FTx" customClass="CityTableViewCell" customModule="learningCodableJSON" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="120.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b82-N3-FTx" id="1PY-bL-LvO" customClass="CityTableViewCell" customModule="learningCodableJSON" customModuleProvider="target">
