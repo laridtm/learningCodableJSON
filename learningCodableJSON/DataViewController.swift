@@ -12,7 +12,7 @@ class DataViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let json = """
             {
              "weather": [
@@ -31,17 +31,16 @@ class DataViewController: UIViewController {
               ]
             }
             """.data(using: .utf8)!
-        
+
             let decoder = JSONDecoder()
             var weatherArr: DicWeather?
-            
+
             do {
                 weatherArr = try decoder.decode(DicWeather.self, from: json)
                 print(weatherArr?.weather)
             } catch {
                 print(error)
             }
-        
     }
 }
 
@@ -55,7 +54,7 @@ extension DataViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "DataCity") as? DataCityTableViewCell
         
-//        cell?.setLabels(city: )
+        cell?.setLabels(city: )
         
         return cell ?? UITableViewCell()
     }

@@ -2,25 +2,11 @@
 //  JSONDecoder.swift
 //  learningCodableJSON
 //
-//  Created by Larissa Diniz  on 10/02/20.
+//  Created by Larissa Diniz  on 13/02/20.
 //  Copyright © 2020 Larissa Diniz . All rights reserved.
 //
 
 import Foundation
-
-struct Weather: Codable {
-    
-    let humidity: Int
-    let city: String
-    let min: Int
-    let max: Int
-    
-}
-
-struct DicWeather: Codable {
-    
-    let weather: [Weather]
-}
 
 func getJSON() {
 //    let json = """
@@ -41,7 +27,7 @@ func getJSON() {
 //      ]
 //    }
 //    """.data(using: .utf8)!
-
+//
 //    let decoder = JSONDecoder()
 //    var arrWeather: DicWeather?
 //    
@@ -52,5 +38,3 @@ func getJSON() {
 //        print(error)
 //    }
 }
-
-
