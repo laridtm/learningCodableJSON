@@ -10,37 +10,37 @@ import UIKit
 
 class DataViewController: UIViewController {
     
-    let json = """
-               {
-                "weather": [
-                   {
-                     "humidity": 67,
-                     "city": "Flonopx",
-                     "min": 21,
-                     "max": 26
-                   },
-                   {
-                     "humidity": 57,
-                     "city": "Palhoça",
-                     "min": 20,
-                     "max": 26
-                   }
-                 ]
-               }
-               """.data(using: .utf8)!
-
-               let decoder = JSONDecoder()
-               var weatherArr: DicWeather?
+//    let json = """
+//               {
+//                "weather": [
+//                   {
+//                     "humidity": 67,
+//                     "city": "Flonopx",
+//                     "min": 21,
+//                     "max": 26
+//                   },
+//                   {
+//                     "humidity": 57,
+//                     "city": "Palhoça",
+//                     "min": 20,
+//                     "max": 26
+//                   }
+//                 ]
+//               }
+//               """.data(using: .utf8)!
+//
+//               let decoder = JSONDecoder()
+//               var weatherArr: DicWeather?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-            do {
-                weatherArr = try decoder.decode(DicWeather.self, from: json)
-                print(weatherArr?.weather)
-            } catch {
-                print(error)
-            }
+//            do {
+//                weatherArr = try decoder.decode(DicWeather.self, from: json)
+//                print(weatherArr?.weather)
+//            } catch {
+//                print(error)
+//            }
     }
 }
 
@@ -54,7 +54,7 @@ extension DataViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "DataCity") as? DataCityTableViewCell
         
-        cell?.setLabels(city: (weatherArr?.weather[indexPath.row])!)
+//        cell?.setLabels(city: (weatherArr?.weather[indexPath.row])!)
         
         return cell ?? UITableViewCell()
     }
