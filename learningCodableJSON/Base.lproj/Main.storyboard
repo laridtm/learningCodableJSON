@@ -37,7 +37,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="cityLabel" destination="msR-Qa-PjG" id="HBh-mu-xHr"/>
-                                            <segue destination="YNT-Vh-UNO" kind="show" id="WXI-8K-9fZ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -57,6 +56,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="YNT-Vh-UNO" kind="show" identifier="DataCity" id="ZYs-QA-gjY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

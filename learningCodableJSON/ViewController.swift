@@ -68,12 +68,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CityCell") as? CityTableViewCell
         
-        cell?.setCity(city: weatherArr!.weather[indexPath.row])
+        guard let array = weatherArr?.weather[indexPath.row] else {
+            fatalError()
+        }
+        cell?.setCity(weather: array)
         
         return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selected = indexPath.row
+        
+        //executa uma segue
+        performSegue(withIdentifier: "DataCity", sender: nil)
     }
 }

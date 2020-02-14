@@ -24,8 +24,8 @@ class DataCity: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameCityLabel.text = weather?.city
-        valueHumidityLabel.text = "\(weather?.humidity)%"
-        valueMinLabel.text = "\(weather?.min)º"
-        valueMaxLabel.text = "\(weather?.max)º"
+        valueHumidityLabel.text = "\(weather!.humidity)%"
+        valueMinLabel.text = "\(weather!.min)º"
+        valueMaxLabel.text = "\(weather!.max)º"
     }
 }

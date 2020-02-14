@@ -12,8 +12,8 @@ class CityTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cityLabel: UILabel!
     
-    func setCity(city: Weather){
-        cityLabel.text = city.city
+    func setCity(weather: Weather){
+        cityLabel.text = weather.city
     }
     
 }
