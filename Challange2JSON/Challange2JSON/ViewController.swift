@@ -9,10 +9,36 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let json = """
+    [
+        {
+            "humidity": 90,
+            "climate": "rainy",
+            "temperature": [
+                {
+                    "max": 30,
+                    "min": 22
+                }
+            ]
+        }
+    ]
+    """.data(using: .utf8)!
+    
+    let decoder = JSONDecoder()
+    var arrCity: City?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        do {
+            let arrCity = try decoder.decode([City].self, from: json)
+            print(arrCity)
+        } catch {
+            print(error)
+        }
+        
     }
 
 
