@@ -8,36 +8,78 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var cities: [City] = [City(name: "Florianópolis"),
-                        City(name: "Palhoça"),
-                        City(name: "São José"),
-                        City(name: "Santo Amaro")]
+    let json = """
+    {
+     "weather": [
+        {
+          "humidity": 67,
+          "city": "Florianópolis",
+          "min": 21,
+          "max": 26
+        },
+        {
+          "humidity": 57,
+          "city": "Palhoça",
+          "min": 20,
+          "max": 26
+        },
+        {
+          "humidity": 48,
+          "city": "São José",
+          "min": 11,
+          "max": 18
+        }
+      ]
+    }
+    """.data(using: .utf8)!
+    
+    let decoder = JSONDecoder()
+    var weatherArr: Weathers?
+    
+    var selected: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        do {
+            weatherArr = try decoder.decode(Weathers.self, from: json)
+            print(weatherArr?.weather)
+        } catch {
+            print(error)
+        }
     }
-}
-
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let dataCity = segue.destination as? DataCity else {
+            return
+        }
+        
+        dataCity.weather = weatherArr?.weather[selected]
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cities.count
+        return weatherArr?.weather.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CityCell") as? CityTableViewCell
         
-        cell?.setCity(city: cities[indexPath.row])
+        guard let array = weatherArr?.weather[indexPath.row] else {
+            fatalError()
+        }
+        cell?.setCity(weather: array)
         
         return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         tableView.deselectRow(at: indexPath, animated: true)
+        selected = indexPath.row
+        
+        //executa uma segue
+        performSegue(withIdentifier: "DataCity", sender: nil)
     }
 }
-
