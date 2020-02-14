@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct DicWeather: Codable {
+struct Weathers: Codable {
     
     let weather: [Weather]
 }

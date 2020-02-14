@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     """.data(using: .utf8)!
     
     let decoder = JSONDecoder()
-    var weatherArr: DicWeather?
+    var weatherArr: Weathers?
     
     var selected: Int = 0
     
@@ -44,7 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         do {
-            weatherArr = try decoder.decode(DicWeather.self, from: json)
+            weatherArr = try decoder.decode(Weathers.self, from: json)
             print(weatherArr?.weather)
         } catch {
             print(error)
@@ -61,7 +61,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return weatherArr!.weather.count
+        return weatherArr?.weather.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

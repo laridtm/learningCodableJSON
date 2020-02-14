@@ -19,7 +19,7 @@
 		153AB1DB23F30D8600D54242 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1DA23F30D8600D54242 /* City.swift */; };
 		153AB1DD23F3337900D54242 /* DataCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1DC23F3337900D54242 /* DataCity.swift */; };
 		153AB1E523F59B0A00D54242 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1E423F59B0A00D54242 /* Weather.swift */; };
-		153AB1E723F59B6E00D54242 /* DicWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1E623F59B6E00D54242 /* DicWeather.swift */; };
+		153AB1E723F59B6E00D54242 /* Weathers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB1E623F59B6E00D54242 /* Weathers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		153AB1DA23F30D8600D54242 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		153AB1DC23F3337900D54242 /* DataCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCity.swift; sourceTree = "<group>"; };
 		153AB1E423F59B0A00D54242 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		153AB1E623F59B6E00D54242 /* DicWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicWeather.swift; sourceTree = "<group>"; };
+		153AB1E623F59B6E00D54242 /* Weathers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weathers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 				153AB1DC23F3337900D54242 /* DataCity.swift */,
 				153AB1D623F1F3BB00D54242 /* CityTableViewCell.swift */,
 				153AB1E423F59B0A00D54242 /* Weather.swift */,
-				153AB1E623F59B6E00D54242 /* DicWeather.swift */,
+				153AB1E623F59B6E00D54242 /* Weathers.swift */,
 				153AB1DA23F30D8600D54242 /* City.swift */,
 				153AB1AA23F1E0DA00D54242 /* Main.storyboard */,
 				153AB1AD23F1E0DF00D54242 /* Assets.xcassets */,
@@ -278,7 +278,7 @@
 				153AB1DB23F30D8600D54242 /* City.swift in Sources */,
 				153AB1D723F1F3BB00D54242 /* CityTableViewCell.swift in Sources */,
 				153AB1E523F59B0A00D54242 /* Weather.swift in Sources */,
-				153AB1E723F59B6E00D54242 /* DicWeather.swift in Sources */,
+				153AB1E723F59B6E00D54242 /* Weathers.swift in Sources */,
 				153AB1DD23F3337900D54242 /* DataCity.swift in Sources */,
 				153AB1A523F1E0DA00D54242 /* AppDelegate.swift in Sources */,
 				153AB1A723F1E0DA00D54242 /* SceneDelegate.swift in Sources */,
