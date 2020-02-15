@@ -15,6 +15,7 @@
 		153AB23D23F740A200D54242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153AB23B23F740A200D54242 /* LaunchScreen.storyboard */; };
 		153AB24823F740A200D54242 /* Challange2JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB24723F740A200D54242 /* Challange2JSONTests.swift */; };
 		153AB25323F740A200D54242 /* Challange2JSONUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB25223F740A200D54242 /* Challange2JSONUITests.swift */; };
+		159BA75D23F78A16003CD19B /* DataCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159BA75C23F78A16003CD19B /* DataCityViewController.swift */; };
 		15C5554D23F756EB00956EDB /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5554C23F756EB00956EDB /* City.swift */; };
 		15C5554F23F758C200956EDB /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5554E23F758C200956EDB /* Temperature.swift */; };
 		15C5555523F764BD00956EDB /* Florianopolis.json in Resources */ = {isa = PBXBuildFile; fileRef = 15C5555223F764BC00956EDB /* Florianopolis.json */; };
@@ -55,6 +56,7 @@
 		153AB24E23F740A200D54242 /* Challange2JSONUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Challange2JSONUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		153AB25223F740A200D54242 /* Challange2JSONUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challange2JSONUITests.swift; sourceTree = "<group>"; };
 		153AB25423F740A200D54242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		159BA75C23F78A16003CD19B /* DataCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCityViewController.swift; sourceTree = "<group>"; };
 		15C5554C23F756EB00956EDB /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		15C5554E23F758C200956EDB /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		15C5555223F764BC00956EDB /* Florianopolis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Florianopolis.json; sourceTree = SOURCE_ROOT; };
@@ -115,6 +117,7 @@
 				153AB23223F7409D00D54242 /* SceneDelegate.swift */,
 				153AB23423F7409D00D54242 /* ViewController.swift */,
 				15C5556223F7749A00956EDB /* CityNameViewCell.swift */,
+				159BA75C23F78A16003CD19B /* DataCityViewController.swift */,
 				153AB23623F7409D00D54242 /* Main.storyboard */,
 				15C5554C23F756EB00956EDB /* City.swift */,
 				15C5554E23F758C200956EDB /* Temperature.swift */,
@@ -284,6 +287,7 @@
 				153AB23123F7409D00D54242 /* AppDelegate.swift in Sources */,
 				15C5556323F7749A00956EDB /* CityNameViewCell.swift in Sources */,
 				15C5554D23F756EB00956EDB /* City.swift in Sources */,
+				159BA75D23F78A16003CD19B /* DataCityViewController.swift in Sources */,
 				15C5554F23F758C200956EDB /* Temperature.swift in Sources */,
 				153AB23323F7409D00D54242 /* SceneDelegate.swift in Sources */,
 			);
