@@ -79,6 +79,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         dataCity.selectedCity = loadCities(city: city)[0]
+        dataCity.name = city
     }
     
 }

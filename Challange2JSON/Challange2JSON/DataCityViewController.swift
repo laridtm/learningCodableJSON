@@ -17,6 +17,7 @@ class DataCityViewController: UIViewController {
     @IBOutlet weak var tempMinLabel: UILabel!
     
     var selectedCity: City?
+    var name: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,7 @@ class DataCityViewController: UIViewController {
             return
         }
 
+        cityLabel.text = name
         humidityLabel.text = "\(currentCity.humidity)%"
         climateLabel.text = currentCity.climate
         tempMaxLabel.text = "\(currentCity.temperature[0].max)º"
