@@ -8,18 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     let decoder = JSONDecoder()
+    
+    var nameCities: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadCities()
+        
+//        loadCities(city: "Florianopolis")
+        
+        nameCities.append("Florianopolis")
+        nameCities.append("Imbituba")
+        nameCities.append("Palhoça")
+        
     }
         
-    func loadCities() -> [City] {
+    func loadCities(city: String) -> [City] {
         
-        guard let fileURL = Bundle.main.url(forResource: "Florianopolis", withExtension: "json") else {
+        guard let fileURL = Bundle.main.url(forResource: city, withExtension: "json") else {
             print("couldn't find the file")
             return []
         }
@@ -41,7 +49,18 @@ class ViewController: UIViewController {
         return []
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return nameCities.count
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CityName") as? CityNameViewCell
+        
+        cell?.setNameCity(name: nameCities[indexPath.row])
+        
+        return cell ?? UITableViewCell()
+    }
     
 }
 
