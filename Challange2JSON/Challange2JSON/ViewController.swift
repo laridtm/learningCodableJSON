@@ -9,38 +9,40 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    let json = """
-    [
-        {
-            "humidity": 90,
-            "climate": "rainy",
-            "temperature": [
-                {
-                    "max": 30,
-                    "min": 22
-                }
-            ]
-        }
-    ]
-    """.data(using: .utf8)!
-    
+
     let decoder = JSONDecoder()
-    var arrCity: City?
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadCities()
+    }
         
-        do {
-            let arrCity = try decoder.decode([City].self, from: json)
-            print(arrCity)
-        } catch {
-            print(error)
+    func loadCities() -> [City] {
+        
+        guard let fileURL = Bundle.main.url(forResource: "Florianopolis", withExtension: "json") else {
+            print("couldn't find the file")
+            return []
         }
         
+        do {
+            let content = try Data(contentsOf: fileURL)
+            
+            do {
+                let arrCity = try decoder.decode([City].self, from: content)
+                print(arrCity)
+                return arrCity
+            } catch {
+                print(error)
+            }
+            
+        } catch let error {
+            print(error)
+        }
+        return []
     }
-
-
+    
+    
+    
 }
+
 

@@ -17,6 +17,9 @@
 		153AB25323F740A200D54242 /* Challange2JSONUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153AB25223F740A200D54242 /* Challange2JSONUITests.swift */; };
 		15C5554D23F756EB00956EDB /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5554C23F756EB00956EDB /* City.swift */; };
 		15C5554F23F758C200956EDB /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C5554E23F758C200956EDB /* Temperature.swift */; };
+		15C5555523F764BD00956EDB /* Florianopolis.json in Resources */ = {isa = PBXBuildFile; fileRef = 15C5555223F764BC00956EDB /* Florianopolis.json */; };
+		15C5555623F764BD00956EDB /* Palhoça.json in Resources */ = {isa = PBXBuildFile; fileRef = 15C5555323F764BC00956EDB /* Palhoça.json */; };
+		15C5555723F764BD00956EDB /* Imbituba.json in Resources */ = {isa = PBXBuildFile; fileRef = 15C5555423F764BD00956EDB /* Imbituba.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		153AB25423F740A200D54242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15C5554C23F756EB00956EDB /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		15C5554E23F758C200956EDB /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		15C5555223F764BC00956EDB /* Florianopolis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Florianopolis.json; sourceTree = SOURCE_ROOT; };
+		15C5555323F764BC00956EDB /* Palhoça.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Palhoça.json"; sourceTree = SOURCE_ROOT; };
+		15C5555423F764BD00956EDB /* Imbituba.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Imbituba.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				153AB23623F7409D00D54242 /* Main.storyboard */,
 				15C5554C23F756EB00956EDB /* City.swift */,
 				15C5554E23F758C200956EDB /* Temperature.swift */,
+				15C5555223F764BC00956EDB /* Florianopolis.json */,
+				15C5555423F764BD00956EDB /* Imbituba.json */,
+				15C5555323F764BC00956EDB /* Palhoça.json */,
 				153AB23923F740A200D54242 /* Assets.xcassets */,
 				153AB23B23F740A200D54242 /* LaunchScreen.storyboard */,
 				153AB23E23F740A200D54242 /* Info.plist */,
@@ -238,9 +247,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C5555623F764BD00956EDB /* Palhoça.json in Resources */,
 				153AB23D23F740A200D54242 /* LaunchScreen.storyboard in Resources */,
+				15C5555723F764BD00956EDB /* Imbituba.json in Resources */,
 				153AB23A23F740A200D54242 /* Assets.xcassets in Resources */,
 				153AB23823F7409D00D54242 /* Main.storyboard in Resources */,
+				15C5555523F764BD00956EDB /* Florianopolis.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
