@@ -59,7 +59,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="dw8-7N-ShN" kind="show" id="5rD-bE-KQa"/>
+                        <segue destination="dw8-7N-ShN" kind="show" identifier="DataCity" id="5rD-bE-KQa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

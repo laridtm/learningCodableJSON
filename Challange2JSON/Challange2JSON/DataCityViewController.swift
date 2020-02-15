@@ -16,12 +16,12 @@ class DataCityViewController: UIViewController {
     @IBOutlet weak var tempMaxLabel: UILabel!
     @IBOutlet weak var tempMinLabel: UILabel!
     
-    var city: City? 
+    var selectedCity: City?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let currentCity = city else {
+        guard let currentCity = selectedCity else {
             return
         }
 

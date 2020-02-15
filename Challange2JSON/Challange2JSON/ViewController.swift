@@ -13,11 +13,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let decoder = JSONDecoder()
     
     var nameCities: [String] = []
+    
+    var city: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        loadCities(city: "Florianopolis")
+        
         
         nameCities.append("Florianopolis")
         nameCities.append("Imbituba")
@@ -60,6 +62,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell?.setNameCity(name: nameCities[indexPath.row])
         
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var index = indexPath.row
+        city = nameCities[index]
+        
+        performSegue(withIdentifier: "DataCity", sender: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let dataCity = segue.destination as? DataCityViewController else {
+            return
+        }
+        
+        dataCity.selectedCity = loadCities(city: city)[0]
     }
     
 }
