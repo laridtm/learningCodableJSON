@@ -19,8 +19,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         nameCities.append("Florianopolis")
         nameCities.append("Imbituba")
         nameCities.append("Palhoça")
@@ -59,14 +57,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CityName") as? CityNameViewCell
         
-        cell?.setNameCity(name: nameCities[indexPath.row])
+        cell?.nameCity.text = nameCities[indexPath.row]
+//        cell?.setNameCity(name: nameCities[indexPath.row])
         
         return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var index = indexPath.row
-        city = nameCities[index]
+//        var index = indexPath.row
+        city = nameCities[indexPath.row]
         
         performSegue(withIdentifier: "DataCity", sender: nil)
         

@@ -12,7 +12,7 @@ class CityNameViewCell: UITableViewCell {
     
     @IBOutlet weak var nameCity: UILabel!
     
-    func setNameCity(name: String) {
-        nameCity.text = name
-    }
+//    func setNameCity(name: String) {
+//        nameCity.text = name
+//    }
 }
