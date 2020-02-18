@@ -11,8 +11,5 @@ import UIKit
 class CityNameViewCell: UITableViewCell {
     
     @IBOutlet weak var nameCity: UILabel!
-    
-//    func setNameCity(name: String) {
-//        nameCity.text = name
-//    }
+
 }
