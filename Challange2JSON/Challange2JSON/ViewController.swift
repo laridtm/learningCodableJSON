@@ -15,6 +15,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var nameCities: [String] = []
     
     var city: String = ""
+    
+    var loadImage: UIImage?
+    
+    let session = URLSession.shared
+    
+    let urlRainy = URL(string: "https://centralca.cdn-anvilcms.net/media/images/2019/01/02/images/Rainy_Weather_pix.max-752x423.jpg")!
+    let urlSunny = URL(string: "https://www.breakingbelizenews.com/wp-content/uploads/2019/06/Warm-weather.jpg")!
+    let urlCloudy = URL(string: "https://hoodline.imgix.net/uploads/story/image/402715/istock__..featured_image_1..cloudy_2.jpg.jpg?auto=format")!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +31,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         nameCities.append("Imbituba")
         nameCities.append("Palhoça")
         
+        let task = session.dataTask(with: urlRainy) { data, response, error in
+            if error == nil {
+                DispatchQueue.main.async {
+                    self.loadImage = UIImage(data: data!)
+                }
+            }
+        }
+        task.resume()
     }
         
     func loadCities(city: String) -> [City] {
@@ -77,8 +93,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         dataCity.selectedCity = loadCities(city: city)[0]
         dataCity.name = city
+        DispatchQueue.main.async {
+            dataCity.imageCitylabel.image = self.loadImage
+        }
     }
-    
 }
 
 

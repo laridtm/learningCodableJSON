@@ -15,6 +15,7 @@ class DataCityViewController: UIViewController {
     @IBOutlet weak var climateLabel: UILabel!
     @IBOutlet weak var tempMaxLabel: UILabel!
     @IBOutlet weak var tempMinLabel: UILabel!
+    @IBOutlet weak var imageCitylabel: UIImageView!
     
     var selectedCity: City?
     var name: String?
