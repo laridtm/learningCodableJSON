@@ -1,0 +1,12 @@
+[
+	{
+		"humidity": 90,
+		"climate": "rainy",
+		"temperature": [
+			{
+				"max": 30,
+				"min": 22
+			}
+		]
+	}
+]

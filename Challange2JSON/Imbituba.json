@@ -1,0 +1,12 @@
+[
+	{
+		"humidity": 40,
+		"climate": "cloudy",
+		"temperature": [
+			{
+				"max": 30,
+				"min": 24
+			}
+		]
+	}
+]
