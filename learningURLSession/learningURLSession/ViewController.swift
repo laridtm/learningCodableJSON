@@ -22,6 +22,7 @@ class ViewController: UIViewController {
                 DispatchQueue.main.async {
                     let loadedImage = UIImage(data: data!)
                     self.imageContent.image = loadedImage
+                    print(error)
                 }
             }
         }
