@@ -40,8 +40,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
             
         }
-        task.resume()
         
+        task.resume()
+    
     }
     
     func tableView(_ tableview: UITableView, numberOfRowsInSection section: Int) -> Int {
